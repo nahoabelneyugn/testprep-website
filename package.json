@@ -1,0 +1,15 @@
+{
+  "name": "testprep-website",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "cd frontend && npm start",
+    "build": "cd frontend && npm run build",
+    "test": "cd frontend && npm test",
+    "dev": "concurrently \"cd frontend && npm start\" \"cd backend && python app.py\""
+  },
+  "proxy": "http://localhost:5000",
+  "devDependencies": {
+    "concurrently": "^8.2.1"
+  }
+}
